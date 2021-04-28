@@ -1,0 +1,24 @@
+type Data @model @auth(rules: [{allow: public}]) @key(name: "byPolls", fields: ["poll_id"]) {
+  id: ID!
+  poll_data: AWSJSON
+  poll_id: ID
+}
+
+type Polls @model @auth(rules: [{allow: public}]) @key(name: "byUsers", fields: ["u"]) @key(name: "byAdmin", fields: ["adminID"]) {
+  id: ID!
+  creater_id: ID
+  Data: [Data] @connection(keyName: "byPolls", fields: ["id"])
+  poll_name: String
+  poll_questions: AWSJSON
+}
+
+type Users @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  first_name: String
+  last_name: String
+  email: String
+  Polls: [Polls] @connection(keyName: "byUsers", fields: ["id"])
+  password: String
+  roles: String
+  department_nam: String
+}
