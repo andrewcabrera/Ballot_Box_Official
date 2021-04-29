@@ -12,4 +12,5 @@ code {
     monospace;
 }
 
-
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(10,4,49,1) 19%, rgba(6,44,76,1) 37%, rgba(121,31,9,1) 63%, rgba(255,210,83,1) 100%);
