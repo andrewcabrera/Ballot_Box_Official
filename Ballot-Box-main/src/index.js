@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
 <link href="https://unpkg.com/survey-react@1.8.44/modern.css" type="text/css" rel="stylesheet" />
 //Amplify.configure(awsconfig);
 ReactDOM.render(

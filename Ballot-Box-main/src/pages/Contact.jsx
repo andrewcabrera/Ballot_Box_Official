@@ -15,7 +15,7 @@ function Contact() {
               Union College Student Life
             </p>
             <p>
-            Phone: 402.486.2507
+            Phone: 403.555.6905
             </p>
             <p>
             Email: student.life@ucollege.edu
