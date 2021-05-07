@@ -7,6 +7,24 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Polls from "./pages/Polls";
 import Surveys from "./pages/Surveys";
+import Discussions from "./pages/Discussions";
+import logo from './logo.svg';
+import './App.css';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header>
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <h1>We now have Auth!</h1>
+//       </header>
+//       <AmplifySignOut />
+//     </div>
+//   );
+// }
+
+
 function App() {
   return (
     <div className="App">
@@ -18,11 +36,14 @@ function App() {
           <Route path="/contact" exact component={() => <Contact />} />
           <Route path="/polls" exact component={() => <Polls />} />
           <Route path="/surveys" exact component={()=> <Surveys />}/>
+          <Route path="/discussions" exact component={() => <Discussions />}/>
         </Switch>
         <Footer />
       </Router>
+      <AmplifySignOut />
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
+

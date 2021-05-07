@@ -1,5 +1,5 @@
 import Amplify from 'aws-amplify';
-//import awsconfig from './aws-exports';
+import awsconfig from './aws-exports';
 
 
 import React from 'react';
@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 <link href="https://unpkg.com/survey-react@1.8.44/modern.css" type="text/css" rel="stylesheet" />
-//Amplify.configure(awsconfig);
+Amplify.configure(awsconfig);
 ReactDOM.render(
   <React.StrictMode>
     <App />

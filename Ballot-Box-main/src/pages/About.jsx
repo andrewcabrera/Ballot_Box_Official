@@ -2,21 +2,17 @@ import React from "react";
 
 function About() {
   return (
-    <div>
-      <div>
-        <div>
-          <div>
-          </div>
-          <div>
-            <h1>About</h1>
-            <p>
-              Ballot Box was created by JAS Software Solutions for the sole purpose of improving Union College. This is a place where your 
-              voice is heard and where your opinion is valued. Honesty is the best policy; therefore, your answers to polls, discussions, and surveys
-              are always anonomus.
-            </p>
-          </div>
-        </div>
+    <div style={{backgroundColor: 'black'}}>
+      <img src="/images/student.jpg" alt="background"/>
+      <div class='background'>
       </div>
+        <div style={{color: 'rgba(220, 4, 44)'}}>
+          <h1 style={{paddingTop:'16px', paddingLeft:'10px', fontSize: "150%"}}>About</h1>
+        </div>
+         <h3 style={{paddingTop:'10px', paddingLeft:'10px'}}>What to know more about us?</h3>
+          <p style={{paddingTop:'10px', paddingLeft:'10px', paddingBottom: "10px"}}>
+            Add more information here
+          </p>
     </div>
   );
 }
